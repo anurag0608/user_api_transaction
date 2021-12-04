@@ -9,6 +9,15 @@ More Details: https://blog.appsignal.com/2021/02/03/improving-node-application-p
 - Regardless of what user's currency is (for example: my default transaction currency is `'INR'`), one can easily transfer money in any currency.
 For example: I want to transfer money to a user in `USD`, If I had `Rs 100` in my account and I want to transfer `1$`, then `1$` will be converted to equivalent `INR` and will be deducted from my account. Similarly, the person whom I'm transferring money, if he receives money in `EUR` then `1$` will bee converted to equivalent `EUR` and will be credited to target user's account.
 
+## **How to run ?**
+> Go to the root directory, run the following commands
+
+> npm install 
+
+>  node master.js </br> 
+
+- *This will create multiple instances of the api server ( using  clustering )*
+
 ## API Documentation
 [/register](#register)</br>
 [/login](#login)</br>
