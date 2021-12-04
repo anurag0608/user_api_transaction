@@ -87,5 +87,5 @@ Request body {  </br>
     `net_balance` : Number, </br>
     `amount_credited` : Number, </br>
     `amount_debited` : Number, </br>
-    `currency`: Number </br>
+    `currency` : String </br>
 } </br>
