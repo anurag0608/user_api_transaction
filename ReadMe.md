@@ -1,5 +1,5 @@
 ## USER MONEY TRANSACTION API
-### This app is made using NodeJS, Express and MongoDB
+### This app is made using NodeJS, Express and MongoDB (Used MongoDB Atlas - Cloud DB, Credentials provided in .env file for temporary use)
 ### Supported features
 - Token based authentication using JWT tokens
 - All transactions follow ACID (Atomicity, Consistency, Isolation, Durability) properties. More Details: https://www.mongodb.com/basics/acid-transactions
@@ -15,6 +15,9 @@ For example: I want to transfer money to a user in `USD`, If I had `Rs 100` in m
 
 + This App is actually capable of receiving and handling thousands of transaction requests/sec
 ```
+### **Note on .env file**
+- Added credentials for accessing ***mongoDB Atlas*** and ***currency converter API***
+- You don't need to edit anything
 
 ## **How to run ?**
 > Go to the root directory, run the following commands
