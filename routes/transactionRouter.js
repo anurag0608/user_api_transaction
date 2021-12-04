@@ -21,6 +21,10 @@ router.post('/',async (req,res)=>{
             res.send("Invalid LoggedIn User!");
             return
         });
+        if(to_user == undefined || to_user == null){
+            res.send("Receiver not found!");
+            return
+        }
         if(to_user._id.toString() == from_user._id.toString()){
             res.send("Cannot send money to yourself");
             return
