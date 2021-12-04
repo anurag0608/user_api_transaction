@@ -21,7 +21,10 @@ module.exports = async ()=>{
     
     app.get('/', validateToken, async (req,res)=>{
         const current_user_id = req.user_id
-        const user = await User.findById(current_user_id).catch(err=>res.send(err))
+        const user = await User.findById(current_user_id).catch(err=>{
+            res.send(err)
+            return
+        })
         res.send("Welcome to the bank!" + user.username)
     })
     app.get('/getCurrentUser',validateToken,async (req, res)=>{
