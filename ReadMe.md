@@ -8,6 +8,13 @@ More Details: https://blog.appsignal.com/2021/02/03/improving-node-application-p
 - Supported currencies `['INR','USD','EUR']`, if currency is not specified during transaction the default transaction will be in `'USD'`
 - Regardless of what user's currency is (for example: my default transaction currency is `'INR'`), one can easily transfer money in any currency.
 For example: I want to transfer money to a user in `USD`, If I had `Rs 100` in my account and I want to transfer `1$`, then `1$` will be converted to equivalent `INR` and will be deducted from my account. Similarly, the person whom I'm transferring money, if he receives money in `EUR` then `1$` will bee converted to equivalent `EUR` and will be credited to target user's account.
+- Currency conversion is done using https://www.currencyconverterapi.com/. For free version it allows **100 Requests/hour**.
+## Note :
+```diff 
+- You can test this application and do 100 transaction per hour (because I'm using free currency converter API).
+
++ This App is actually capable of receiving and handling thousands of transaction requests/sec
+```
 
 ## **How to run ?**
 > Go to the root directory, run the following commands
