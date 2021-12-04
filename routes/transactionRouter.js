@@ -6,6 +6,12 @@ axios = require('axios'),
 router = express.Router({mergeParams: true});
 
 router.post('/',async (req,res)=>{
+    if(req.body.amount == undefined || req.body.amount == null || req.body.amount == ''){
+        res.status(400).json({
+            message: "Please enter amount"
+        })
+        return
+    }
     if(req.body.amount < 0)
         res.send("Amount cannot be negative");
     else{
