@@ -55,8 +55,8 @@ Request body {  </br>
 
 </br>
 
-## **Protected Routes**
-- Requires `x-access-token` in Http headers
+# **Protected Routes**
+- *Requires `x-access-token` in Http headers*
 </br>
 
 <h2 id='post-transaction'>POST <span style="color:#ecde60">/transaction<span></h2>
